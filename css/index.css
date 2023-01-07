@@ -251,25 +251,13 @@ body::-webkit-scrollbar-thumb {
   grid-area: block1;
   display: flex;
   flex-wrap: wrap;
-  overflow-x: auto;
-  scrollbar-gutter: auto;
   padding-left: 10px;
-}
-.byHour::-webkit-scrollbar {
-  height: 8px;
-}
-.byHour::-webkit-scrollbar-track {
-  background: none;
-}
-.byHour::-webkit-scrollbar-thumb {
-  background-color: rgba(0,0,0,0.2);
-  border-radius: 8px;
 }
 .byHour__title {
   color: #fff;
   width: 90%;
   height: 20px;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 10px;
   padding: 5px 0 5px 0;
   display: flex;
@@ -278,10 +266,22 @@ body::-webkit-scrollbar-thumb {
 .hourInfo {
   width: auto;
   height: 70%;
-  display: flex;
+  display: -webkit-inline-box;
   align-items: center;
   border-top: 0.5px solid rgba(255,255,255,0.2);
   padding-top: 20px;
+  overflow-x: auto;
+  scrollbar-gutter: auto;
+}
+.hourInfo::-webkit-scrollbar {
+  height: 8px;
+}
+.hourInfo::-webkit-scrollbar-track {
+  background: none;
+}
+.hourInfo::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 8px;
 }
 .hourInfo__container {
   width: 70px;
